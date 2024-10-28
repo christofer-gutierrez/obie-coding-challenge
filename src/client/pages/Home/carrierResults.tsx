@@ -8,6 +8,7 @@ import "../../styles/carrierResults.css";
 
 function CarrierResults() {
   const [carriers, setCarriers] = useState([]);
+  const [loading, setLoading] = useState(true); // Add loading state
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -18,6 +19,7 @@ function CarrierResults() {
 
   useEffect(() => {
     const fetchCarriers = async () => {
+      setLoading(true); // Start loading before fetching data
       try {
         const response = await axios.get(
           "https://obie-coding-challenge.onrender.com/carriers",
@@ -28,6 +30,8 @@ function CarrierResults() {
         setCarriers(response.data.carriers);
       } catch (error) {
         console.error("Error fetching carriers:", error);
+      } finally {
+        setLoading(false); // Stop loading after fetch completes
       }
     };
 
@@ -48,7 +52,9 @@ function CarrierResults() {
           transition={{ duration: 0.5 }}
         >
           <h1>Your Insurance Options</h1>
-          {carriers.length > 0 ? (
+          {loading ? (
+            <p>Loading carriers...</p>
+          ) : carriers.length > 0 ? (
             <ul>
               {carriers.map((carrier, index) => (
                 <li key={index}>{carrier}</li>
