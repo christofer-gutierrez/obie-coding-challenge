@@ -19,9 +19,12 @@ function CarrierResults() {
   useEffect(() => {
     const fetchCarriers = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/carriers", {
-          params: { state, coverageType },
-        });
+        const response = await axios.get(
+          "https://obie-coding-challenge.onrender.com/carriers",
+          {
+            params: { state, coverageType },
+          }
+        );
         setCarriers(response.data.carriers);
       } catch (error) {
         console.error("Error fetching carriers:", error);
