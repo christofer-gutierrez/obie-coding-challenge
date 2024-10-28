@@ -1,0 +1,13 @@
+body {
+  background-image: url("./assets/wallpaper-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.logo {
+  height: 4em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}

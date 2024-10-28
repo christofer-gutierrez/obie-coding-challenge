@@ -1,0 +1,84 @@
+{
+    "carriers": [
+      {
+        "name": "Allstate",
+        "coverage": {
+          "IL": "Both",
+          "IN": "Both",
+          "MI": null
+        }
+      },
+      {
+        "name": "Founders",
+        "coverage": {
+          "IL": "Auto",
+          "IN": null,
+          "MI": null
+        }
+      },
+      {
+        "name": "Guard",
+        "coverage": {
+          "IL": "Fire",
+          "IN": "Fire",
+          "MI": "Fire"
+        }
+      },
+      {
+        "name": "Hippo",
+        "coverage": {
+          "IL": "Fire",
+          "IN": "Fire",
+          "MI": "Fire"
+        }
+      },
+      {
+        "name": "Lemonade",
+        "coverage": {
+          "IL": "Fire",
+          "IN": "Fire",
+          "MI": "Fire"
+        }
+      },
+      {
+        "name": "National General",
+        "coverage": {
+          "IL": "Both",
+          "IN": "Both",
+          "MI": "Fire"
+        }
+      },
+      {
+        "name": "Nationwide",
+        "coverage": {
+          "IL": "Both",
+          "IN": "Both",
+          "MI": "Both"
+        }
+      },
+      {
+        "name": "Progressive",
+        "coverage": {
+          "IL": "Both",
+          "IN": "Fire",
+          "MI": "Auto"
+        }
+      },
+      {
+        "name": "Seneca",
+        "coverage": {
+          "IL": "Both",
+          "IN": "Fire",
+          "MI": "Auto"
+        }
+      },
+      {
+        "name": "Swyfft",
+        "coverage": {
+          "IL": "Fire",
+          "IN": "Fire",
+          "MI": "Fire"
+        }
+      }
+    ]
+  }
