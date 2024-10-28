@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Container from "@mui/material/Container";
 import StateDropdown from "../../components/StatesDropdown";
-import CoverageToggles from "../../components/coverageToggles";
+import CoverageToggles from "../../components/CoverageToggles";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";

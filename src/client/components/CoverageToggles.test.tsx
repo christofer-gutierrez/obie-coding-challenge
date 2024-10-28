@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import CoverageToggles from "./coverageToggles";
+import CoverageToggles from "./CoverageToggles";
 
 describe("CoverageToggles Component", () => {
   it("renders without crashing", () => {

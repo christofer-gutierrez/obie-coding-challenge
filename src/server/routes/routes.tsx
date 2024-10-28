@@ -1,7 +1,7 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import CarrierSearch from "../pages/Home/CarrierSearch";
-import CarrierResults from "../pages/Home/CarrierResults";
+import CarrierSearch from "../../client/pages/Home/CarrierSearch";
+import CarrierResults from "../../client/pages/Home/carrierResults";
 const AppRoutes = () => {
   const location = useLocation();
 

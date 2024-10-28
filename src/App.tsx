@@ -1,5 +1,6 @@
+import RoutesApp from "./server/routes/routes";
 import "./App.css";
-import RoutesApp from "./routes/routes";
+
 function App() {
   return (
     <div>
